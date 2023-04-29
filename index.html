@@ -4,10 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/favi/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/index.css">
     <title>ARMOZ</title>
 </head>
 <body>
-    
+    <div class="container">
+        <menu>
+            <div class="box-menu">
+                <div class="box-logo">
+                    <img src="assets/imgs/logo-bimo.png" alt="logo-bimo">
+                    <div class="box-nome">
+                        <h1 class="letra-dark">ARMOZ</h1>
+                        <a href="#" class="letra-dark">Criado por Kevin Guilherme</a>
+                    </div>
+                </div>
+                <div class="box-pesquisa">
+                    <input type="search" name="pesquisa" id="menu-pesquisa" placeholder="Pesquisar...">
+                </div>
+                <div class="box-footer-menu">
+                    <div class="box-darkmode" onclick="modoDark()">
+                        <img src="assets/imgs/lua.png" class="lua" alt="">
+                        <img src="assets/imgs/sol.png" class="sol" alt="">
+                        <div class="box-btn-dark-mode">
+                            <p>Modo Escuro</p>
+                            <div class="btn-mododark">
+                                <p class="bola-darkmode"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </menu>
+    </div>
+    <script src="java/mododark.js"></script>
 </body>
 </html>

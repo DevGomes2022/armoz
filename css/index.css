@@ -18,7 +18,7 @@
 
 :root {
     --cor--bodyblack--: #242527;
-    --cor--bodylight--: #ebebeb;
+    --cor--bodywhite--: #ebebeb;
 }
 
 /*==--==IMPORTANTE==--==--*/
@@ -28,13 +28,178 @@ html {
     overflow-x: hidden;
 }
 
-body {
-    background-color: var(--cor--bodylight--);
-}
-
 /*==--==CONTEÚDO==--==-==-*/
 
+.container {
+    width: 100%;
+    height: 5000px;
+    background-color: var(--cor--bodywhite--);
+}
 
+/*==--menu--==*/
+
+menu {
+    width: 300px;
+    height: 100vh;
+    background-color: white;
+    position: fixed;
+    z-index: 999;
+}
+
+.box-menu {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.box-logo {
+    width: 300px;
+    height: auto;
+    font-family: var(--font--principal--);
+}
+
+.box-logo img {
+    height: 25px;
+    display: inline-block;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.box-logo h1 {
+    font-size: 18px;
+    font-weight: 600;
+    display: inline-block;
+    padding-top: 10px;
+    padding-left: 5px;
+    cursor: context-menu;
+    color: black;
+}
+
+.box-logo a {
+    font-size: 10px;
+    text-decoration: none;
+    display: block;
+    padding-left: 5px;
+    color: black;
+}
+
+.box-logo a:hover {
+    text-decoration: underline;
+}
+
+.box-nome {
+    display: inline-block;
+}
+
+.box-pesquisa {
+    width: 280px;
+    height: 40px;
+    background-color: #e9ecf0;
+    margin-left: 10px;
+    margin-top: 35px;
+    position: relative;
+    border-radius: 8px;
+}
+
+#menu-pesquisa {
+    background-color: #e9ecf0;
+    font-size: 15px;
+    padding: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    outline: none;
+    border: none;
+}
+
+#menu-pesquisa::-webkit-search-cancel-button {
+    display: none;
+}
+
+.box-footer-menu {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 300px;
+    height: 40px;
+    border-top: 1px solid #0000004f;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.box-darkmode {
+    width: 280px;
+    height: auto;
+    margin-left: 10px;
+    background-color: #e9ecf0;
+    position: relative;
+    border-radius: 8px;
+}
+
+.sol {
+    height: 20px;
+    padding: 10px;
+}
+
+.lua {
+    height: 20px;
+    padding: 10px;
+    display: none;
+}
+
+.box-btn-dark-mode {
+    width: 130px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.box-darkmode p {
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: 500;
+    cursor: context-menu;
+    font-family: var(--font--principal--);
+}
+
+.btn-mododark {
+    width: 45px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #b0b0b3;
+    position: absolute;
+    top: 50%;
+    left: 110%;
+    transform: translate(-50%,-50%);
+}
+
+.bola-darkmode {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    transition: 0.4s;
+    background-color: white;
+}
+
+/*==--==DARKMODE==--==-==*/
+
+.body-darkmode {
+    background-color: var(--cor--bodyblack--);
+    transition: 0.4s;
+}
+
+.cor-letra-darkmode {
+    color: white;
+}
+
+.sombra-branca {
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
+}
 
 /*==--==ANIMAÇÕES==--==-==*/
 
